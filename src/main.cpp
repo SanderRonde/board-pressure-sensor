@@ -1,9 +1,9 @@
 #include <ArduinoOTA.h>
+#include <pressure.h>
 #include <Arduino.h>
 #include <telnet.h>
+#include <config.h>
 #include <ota.h>
-#include <motor.h>
-#include <temp.h>
 #include <net.h>
 
 void setup() {
@@ -11,7 +11,7 @@ void setup() {
 	Serial.println("Booting");
 
 	// Setup telnet
-	Telnet::setup("temp-board");
+	Telnet::setup(NAME);
 
 	// Setup OTA and wait
 	OTA::setup();
@@ -20,7 +20,7 @@ void setup() {
 	LOGN("Stopped waiting");
 
 	// Setup the rest
-	// TODO:
+	Pressure::init();
 
 	// Done
 	LOGN("Booted");
@@ -30,5 +30,5 @@ void loop() {
 	OTA::loop();
 	Telnet::loop();
 	
-	//TODO:
+	Pressure::loop();
 }

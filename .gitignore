@@ -1,1 +1,5 @@
 .pio
+
+secrets.h
+net_secrets.h
+ota_secrets.h

@@ -1,5 +1,5 @@
 #include <ArduinoOTA.h>
-#include <secrets.h>
+#include <ota_secrets.h>
 
 #define OTA_TIME_S 10
 

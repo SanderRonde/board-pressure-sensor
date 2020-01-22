@@ -1,6 +1,6 @@
 # Arduino board pressure sensor
 
-This repo contains the code for an arduino board that senses pressure and reports it to a server.
+This repo contains the code for an arduino board that senses pressure and reports it to a server. It works by measuring the resistance between two sides of a sheet of [Velostat](https://en.wikipedia.org/wiki/Velostat) sandwhiched between some conductive fabric. Changes in pressure change the resistance of the Velostat. This pressure is constantly reported to a server after which it can act on it.
 
 This project uses [PlatformIO](https://platformio.org/) for simple uploading and interfacing with the board itself.
 

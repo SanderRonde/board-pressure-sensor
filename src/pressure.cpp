@@ -10,7 +10,8 @@
 
 namespace Pressure {
 	void init() {
-		pinMode(IN_PIN, INPUT);
+		pinMode(IN_PIN, INPUT_PULLUP);
+		digitalWrite(IN_PIN, HIGH);
 	}
 
 	void send_pressure(int pressure) {

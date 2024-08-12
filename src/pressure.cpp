@@ -6,7 +6,7 @@
 
 #define IN_PIN A0
 #define PING_TIME 1000
-#define LOG_TIME 5000
+#define LOG_TIME 1000
 
 namespace Pressure {
 	void init() {

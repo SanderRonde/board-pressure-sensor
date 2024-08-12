@@ -1,4 +1,4 @@
 #pragma once
 
-#define NAME "pressure-glasses"
-#define KEY "pressure.glasses"
+#define NAME "pressure-bed"
+#define KEY "pressure.bed"

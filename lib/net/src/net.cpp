@@ -26,9 +26,10 @@ namespace Net {
 
 		String result = "?";
 
+		WiFiClient client;
 		HTTPClient http;
 		http.setTimeout(2000);
-		http.begin(host, port, path);
+		http.begin(client, host, port, path);
 		http.addHeader("Content-Type", "text/plain");
 
 		String body = "";
@@ -53,9 +54,10 @@ namespace Net {
 
 		String result = "?";
 
+		WiFiClient client;
 		HTTPClient http;
 		http.setTimeout(2000);
-		http.begin(host, port, path);
+		http.begin(client, host, port, path);
 		http.addHeader("Content-Type", "application/json");
 
 		String data = String("{\"auth\": \"");
